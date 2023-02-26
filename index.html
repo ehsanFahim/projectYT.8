@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="bennar"><img src="./img/loader.gif"></div>
+    <section class="showcase">
+
+        <header>
+            <h1 class="logo">Travel</h1>
+            <div class="toggle"></div>
+        </header>
+        <video src="./mp4/video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h1>Never Stop</h1>
+            <h4>Exploring the World</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolores perferendis ut odit sed eos
+                velit iste provident illo. Eos.</p>
+            <a href="#">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        const manuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        manuToggle.addEventListener('click', () => {
+            manuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            console.log('hello')
+
+        });
+        var loder = document.getElementById("bennar")
+
+        window.addEventListener("load", function () {
+            loder.style.display = "none"
+        });
+    </script>
+</body>
+
+</html>
